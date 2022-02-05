@@ -29,7 +29,7 @@ attackingwithhrp.Value = false
 
 
 game["Run Service"].Heartbeat:Connect(function(delta)
-	if attackingwithhrp.Value then
+	if attackingwithhrp.Value == true then
 		Fling.CFrame = CFrame.new(mouse.hit.p)
 	else
 		Fling.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame
