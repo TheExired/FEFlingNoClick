@@ -25,7 +25,6 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 
 
 local attackingwithhrp = Instance.new("BoolValue",game.Players.LocalPlayer.Character)
-attachingwithhrp.Name = "AttackingWithHrp"
 attackingwithhrp.Value = false
 
 
