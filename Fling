@@ -24,12 +24,13 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 
 
 
-local attackingwithhrp = false
-
+local attackingwithhrp = Instance.new("BoolValue",game.Players.LocalPlayer.Character)
+attachingwithhrp.Name = "AttackingWithHrp"
+attackingwithhrp.Value = false
 
 
 game["Run Service"].Heartbeat:Connect(function(delta)
-	if attackingwithhrp then
+	if attackingwithhrp.Value then
 		Fling.CFrame = CFrame.new(mouse.hit.p)
 	else
 		Fling.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame
