@@ -37,6 +37,6 @@ game["Run Service"].Heartbeat:Connect(function(delta)
 		Fling.CFrame = CFrame.new(mouse.hit.p)
 		end
 	else
-		Fling.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame * CFrame.new(15,15,15)
+		Fling.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame + Vector3.new(0,15,0)
 	end
 end)
